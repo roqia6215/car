@@ -109,78 +109,163 @@
 .logo:hover{
   transform: scale(1.1) rotate(5deg);
 }
-.footer {
-  background-color: #0a0a1a;
-  color: #eee;
-  padding: 50px 40px 20px;
-  margin-top: 60px;
-  font-family: 'Arial', sans-serif;
+.main-footer {
+    background-color: #0f0f0f; /* Even darker than the about section */
+    color: #ffffff;
+    padding: 60px 0 20px 0; /* Thick top padding */
+    border-top: 2px solid #e67e22; /* Accent line at the top */
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5%;
+    gap: 40px;
 }
 
-.footer-container > div {
-  flex: 1;
-  min-width: 160px;
+.footer-col {
+    flex: 1;
+    min-width: 250px; /* Ensures it looks good on mobile */
 }
 
-.footer-brand h2 {
-  color: #e94560;
-  font-size: 28px;
-  margin-bottom: 10px;
+.footer-col h3 {
+    color: #e67e22; /* Branding color */
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.footer-brand p {
-  font-size: 14px;
-  color: #ccc;
+.footer-col p {
+    color: #bbb;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
-.footer-about h4,
-.footer-links h4,
-.footer-social h4 {
-  color: #e94560;
-  margin-bottom: 15px;
-  font-size: 18px;
+.footer-col ul {
+    list-style: none;
 }
 
-.footer-links ul,
-.footer-social ul {
-  list-style: none;
-  padding: 0;
+.footer-col ul li {
+    margin-bottom: 10px;
 }
 
-.footer-links li,
-.footer-social li {
-  margin-bottom: 10px;
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.footer-links a,
-.footer-social a {
-  color: #ddd;
-  text-decoration: none;
-  transition: 0.3s;
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 5px; /* Slight movement on hover */
 }
 
-.footer-links a:hover,
-.footer-social a:hover {
-  color: #e94560;
-  padding-left: 5px;
+.footer-col a {
+    color: #e67e22;
+    text-decoration: none;
 }
 
 .footer-bottom {
-  text-align: center;
-  border-top: 1px solid #222;
-  padding-top: 25px;
-  margin-top: 40px;
-  font-size: 14px;
-  color: #aaa;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.socials span {
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+/* Adjust the hero and about section so they don't feel squished */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Adjusting the hero section to make sure it doesn't hide behind the footer */
+.hero-section {
+    /* 1. Ensure the path is correct (use the URL below to test if it works) */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1920');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* 2. Changed from height to min-height */
+    min-height: 100vh; 
+    
+    /* 3. Ensure it takes full width */
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+}
+/* Container for the buttons */
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    justify-content: center;
+}
+
+/* Base button styles */
+.btn {
+    text-decoration: none;
+    padding: 14px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 50px; /* Rounded pill shape */
+    transition: all 0.3s ease; /* Smooth animation */
+    display: inline-block;
+}
+
+/* The Login Button (Solid Style) */
+.btn-login {
+    background-color: #e67e22; /* Sleek Orange/Bronze */
+    color: white;
+    border: 2px solid #e67e22;
+}
+
+.btn-login:hover {
+    background-color: #d35400; /* Darker orange on hover */
+    border-color: #d35400;
+    transform: translateY(-3px); /* Lifts the button up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* The Sign Up Button (Outline Style) */
+.btn-signup {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-signup:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Active state (when clicked) */
+.btn:active {
+    transform: translateY(-1px);
 }
 
 /* Responsive */
