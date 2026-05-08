@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif
 }
 .site-name{
   color: #B22222;
@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3a3a3a;
+    background-color: black;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -75,7 +75,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #3a3a3a;
+    background-color: black;
     list-style: none;
     padding: 10px 0;
     margin: 0;
@@ -91,7 +91,7 @@ body {
     flex-direction: column;
 }
 
-.dropdown:hover .dropdown-menu:hover {
+.dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -138,7 +138,7 @@ body {
 /* ========== HERO SECTION ========== */
 .hero-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                      url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1920');
+                      url('https://www.wsupercars.com/wp-content/uploads/2026-Aston-Martin-Vanquish-Volante-001.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,7 +247,7 @@ body {
 
 /* ========== FOOTER ========== */
 .main-footer {
-    background-color: #2b2b2b;
+    background-color: black;
     color: #ffffff;
     padding: 60px 0 20px 0;
     border-top: 2px solid #B22222;
