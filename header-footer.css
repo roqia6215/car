@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Arial', sans-serif
+    font-family: 'Arial', sans-serif;
 }
 .site-name{
   color: #B22222;
@@ -25,7 +25,7 @@ body {
     top: 0;
     z-index: 1000;
     padding: 15px 40px;
-    backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
 }
 
 .first nav ul {
@@ -92,7 +92,7 @@ body {
     flex-direction: column;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu:hover {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -104,7 +104,7 @@ body {
 }
 
 .dropdown-menu li a {
-    color: #e0e0e0;
+    color: white;
     padding: 12px 20px;
     display: block;
     font-size: 16px;
