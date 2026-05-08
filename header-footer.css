@@ -103,7 +103,8 @@ body {
 }
 
 .dropdown-menu li a {
-    color: white;
+    color: white !important;
+    background-color: transparent !important;
     padding: 12px 20px;
     display: block;
     font-size: 16px;
@@ -112,9 +113,9 @@ body {
 }
 
 .dropdown-menu li a:hover {
-    background-color: #B22222;
-    color: white;
-    padding-left: 28px;
+    background-color: #B22222 !important;
+    color: white !important;
+    padding-left: 28px !important;
 }
 
 /* ========== LOGO ========== */
@@ -151,20 +152,18 @@ body {
     text-align: center;
     padding: 20px;
 }
-
+.content-box {
+  max-width: 700px;
+  width: 90%;
+  margin: -70px auto 0 60px;  /* أو margin: 120px auto; لو عايزاه في النص */
+  text-align: left;
+}
 .hero-section h1 {
     color: white;
     font-size: 3.5rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-.hero-section p {
-    color: #cccccc;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    max-width: 600px;
 }
 
 /* ========== BUTTONS ========== */
