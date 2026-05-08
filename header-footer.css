@@ -213,7 +213,12 @@ body {
     justify-content: center;
     text-align: center;
 }
+.hero-section p {
+    color: #cccccc;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
 }
+
 /* Container for the buttons */
 .button-group {
     margin-top: 30px;
