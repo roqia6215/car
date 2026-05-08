@@ -102,21 +102,7 @@
   padding-left: 25px;
 }
 
-.logo{
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  padding: 10px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-}
-.logo:hover{
-  transform: scale(1.1) rotate(5deg);
-}
+
 .main-footer {
     background-color: #0f0f0f; /* Even darker than the about section */
     color: #ffffff;
