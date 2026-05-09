@@ -1,41 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Drive Test</title>
-      <link rel="stylesheet" href="css/nav.css">
-      <link rel="stylesheet" href="css/header-footer.css">
-      <link rel="icon" type="images/x-icon" href="images/favicon.ico">
-      <link rel="stylesheet" href="test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto World</title>
+     <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="css/car.css">
 </head>
-<body>
-     <header>
-        <h1>Drive Test</h1>
-    </header>
+<body class="test-body">
+    <header class="first">
     <nav>
-        
-        
-        <!-- Navigation Links (Moved out of auth-buttons) -->
-       <ul>
-        <li><a href="index.html">Home page</a></li>
-        <li><a href="germany-cars.html">German cars</a></li>
-        <li><a href="italy-cars.html">Italian cars</a></li>
-        <li><a href="usa-cars.html">USA cars</a></li>
-        <li><a href="british-cars.html">British cars</a></li>
-        <li><a href="japanese-cars.html">Japanese cars</a></li>
-        <li><a href="china-cars.html">Chinese cars</a></li>
-        <li><a href="test.html">Drive Test</a></li>
-        <li><a href="contact-us.html">Contact us</a></li>
+        <h1 class="site-name">AutoWorld</h1>
+    <ul>
+       <li><a href="index.html">Home</a></li>
+       <li class="dropdown">
+         <a href="#">Types</a>
+           <ul class="dropdown-menu">
+              <li><a href="germjap.html" target="_blank">Precision Grid</a></li>
+              <li><a href="italin.html" target="_blank">Exotic Mosaic</a></li>
+              <li><a href="usabrit.html" target="_blank">Heritage Editorial</a></li>
+           </ul>
+        </li>
+        <li><a href="test.html" target="_blank">Drive Test</a></li>
+        <li><a href="contactus.html" target="_blank">Contact Us</a></li>
+        <li><a href="reviews.html" target="_blank">Review</a></li>
     </ul>
-
-    
-    </nav>
-   <!-- Theme Toggle -->
+    <!-- Theme Toggle -->
         <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
-        
-  <main>
+    </nav>
+    </header>
+     <main>
   <section class="testdrive-section">
   <div class="testdrive-container">
   
@@ -82,10 +76,46 @@
   </div>
 </section>
 </main>
-     <script src="script.js"></script>
+ <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Our Gallery</h3>
+                <p>We are a premier destination for automotive enthusiasts, offering a curated collection of the world's finest vehicles.</p>
+            </div>
 
- <footer class="contact_us">
-               <p>&copy; 2026 Auto World. All rights reserved</p>
-            </footer>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                        <a href="#">Types</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="germjap.html" target="_blank">Precision Grid</a></li>
+                          <li><a href="italin.html" target="_blank">Exotic Mosaic</a></li>
+                          <li><a href="usabrit.html" target="_blank">Heritage Editorial</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="test.html" target="_blank">Drive Test</a></li>
+                        <li><a href="contactus.html" target="_blank">Contact Us</a></li>
+                        <li><a href="reviews.html" target="_blank">Review</a></li>
+                    </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>123 Speed Way, Turbo City</p>
+                <p>Email: <a href="mailto:info@autoworld.com">info@autoworld.com</a></p>
+                <p>Phone: +1 (555) CAR-TALK</p>
+                <div class="socials">
+                    <span>IG</span> <span>FB</span> <span>YT</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Auto World | All Rights Reserved</p>
+        </div>
+    </footer>
+
 </body>
-</html>  
+</html>
