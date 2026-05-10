@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CAR ZONE</title>
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="car.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <header class="first">
+        <nav>
+            <h1 class="site-name">CAR ZONE</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
+        </nav>
+    </header>
+
+    <!-- Main container uses classes defined in car.css -->
+    <main class="auth-container hero-section">
+        <div class="custom-form">
+            <h2>Member Login</h2>
+            <form id="loginForm" novalidate>
+    <div class="form-group">
+        <input type="text" id="loginUser" placeholder="Username">
+        <!-- Error messages are hidden by default via car.css -->
+        <p id="userError" class="error-msg">Username must be at least 4 characters.</p>
+    </div>
+    
+    <div class="form-group">
+        <input type="password" id="loginPass" placeholder="Password">
+        <p id="passError" class="error-msg">Password must be at least 6 characters.</p>
+    </div>
+
+    <!-- 1. ADD THIS: This is where the "Sent Successfully" message will appear -->
+    <div id="loginStatus" class="status-message"></div>
+    
+    <button type="submit" class="btn btn-login" style="width:100%">Enter Club</button>
+</form>
+            <!-- Sign up link removed as requested -->
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+  
+            <p>&copy; 2026 CAR ZONE | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

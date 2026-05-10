@@ -1,0 +1,147 @@
+/* ========== AUTH & FORM VARIABLES ========== */
+/* These variables will change based on the theme set in <html> */
+:root {
+    --auth-bg-overlay: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    --form-bg: rgba(255, 255, 255, 0.1);
+    --input-bg: rgba(255, 255, 255, 0.8);
+    --text-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] {
+    --auth-bg-overlay: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+    --form-bg: #ffffff;
+    --input-bg: #f0f0f0;
+    --text-color: #1a1a1a;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ========== BACKGROUND PERSISTENCE ========== */
+/* This ensures the car image stays but the "grey/dark" tint adapts */
+.auth-container, .hero-section, .test-body {
+    background-image: var(--auth-bg-overlay), url('images/test.jpeg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 0.4s ease;
+}
+
+/* ========== CONTAINER & FORM BOX ========== */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 60px 20px;
+}
+
+.custom-form {
+    background: var(--form-bg);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgba(178, 34, 34, 0.3);
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.custom-form h2 {
+    color: #B22222;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ========== INPUTS & TEXTAREA ========== */
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.custom-form input, 
+.custom-form textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: var(--input-bg);
+    color: #000; /* Text inside input is always dark for contrast */
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.custom-form input:focus {
+    outline: none;
+    border: 1px solid #B22222;
+}
+
+/* ========== STATUS MESSAGES (JS HOOKS) ========== */
+.status-message {
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 0.95rem;
+    min-height: 20px;
+}
+
+.error-msg {
+    color: #ffaa00;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: none; /* Controlled by script.js */
+}
+
+/* ========== BUTTON STYLING ========== */
+.btn-login {
+    background-color: #B22222;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.btn-login:hover {
+    background-color: #8b0000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(178, 34, 34, 0.4);
+}
+
+/* ========== MAP SPACING (For Contact Us) ========== */
+.map-container {
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #B22222;
+}
+.theme-toggle-btn {
+    background-color: transparent;
+    color: #444; /* Dark gray to match your text */
+    border: 2px solid #8b1a1a; /* Matches your section title color */
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    display: block; /* Centers the button */
+}
+
+.theme-toggle-btn:hover {
+    background-color: #8b1a1a;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 26, 26, 0.4);
+}

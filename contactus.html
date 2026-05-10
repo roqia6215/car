@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CAR ZONE</title>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="car.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="test-body">
+    
+    <!-- HEADER -->
+    <header class="first">
+        <nav>
+            <h1 class="site-name">CAR ZONE</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="auth-container hero-section">
+        <div class="custom-form">
+            <h2>Get In Touch</h2>
+            
+            <!-- Form: Using novalidate for Custom JS Validation -->
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <input type="text" id="contactName" placeholder="Full Name">
+                    <p id="contactNameError" class="error-msg">Please enter your name.</p>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="contactEmail" placeholder="Email Address">
+                    <p id="contactEmailError" class="error-msg">Please enter a valid email.</p>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="contactMsg" rows="4" placeholder="Your Message..."></textarea>
+                </div>
+                
+                <!-- SUCCESS/ERROR MESSAGE BOX -->
+                <div id="contactStatus" class="status-message"></div>
+
+                <button type="submit" class="btn btn-login" style="width:100%">Send Message</button>
+            </form>
+
+            <!-- MAP SECTION: Locked inside the custom-form container -->
+            <div class="map-container" style="margin-top: 25px; border-top: 2px solid #B22222; padding-top: 15px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.173200143657!2d31.44851457625574!3d30.031940918485293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583c1380c13977%3A0xd063e00877995166!2sGerman%20International%20University!5e0!3m2!1sen!2seg!4v1715362000000!5m2!1sen!2seg" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 CAR ZONE | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
