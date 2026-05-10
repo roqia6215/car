@@ -140,7 +140,7 @@ body::before {
   background: rgba(0, 0, 0, 0.2); /* إضاءة خفيفة */
   z-index: -1;
 }
-
+/* luxury*/
 /* Global Reset */
 * {
     margin: 0;
