@@ -6,50 +6,47 @@
     <title>CAR ZONE</title>
     <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="car.css">
-    <link rel="stylesheet" href="auth.css"> <!-- FIXED HERE -->
+    <link rel="stylesheet" href="auth.css">
 </head>
 
-<body class="test-body"> <!-- UPDATED CLASS HERE -->
+<body class="test-body">
     <header class="first">
         <nav>
-        <h1 class="site-name">CAR ZONE</h1>
-    <ul>
-       <li><a href="index.html">Home</a></li>
-       <li class="dropdown">
-         <a href="#">Types</a>
-           <ul class="dropdown-menu">
-              <li><a href="lux.html" target="_blank">Luxury & Prestige</a></li>
-              <li><a href="speed.html" target="_blank">Sports & Exotic</a></li>
-              <li><a href="suv.html" target="_blank">Reliability</a></li>
-           </ul>
-        </li>
-        <li><a href="test.html" target="_blank">Drive Test</a></li>
-        <li><a href="contactus.html" target="_blank">Contact Us</a></li>
-        <li><a href="about.html" target="_blank">About Us</a></li>
-    </ul>
-    <!-- Theme Toggle -->
-        <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
-        <a href="login.html"  class="btn btn-login">Join The Club</a>  
-    </nav>
+            <h1 class="site-name">CAR ZONE</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Types</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="lux.html" target="_blank">Luxury & Prestige</a></li>
+                        <li><a href="speed.html" target="_blank">Sports & Exotic</a></li>
+                        <li><a href="suv.html" target="_blank">Reliability</a></li>
+                    </ul>
+                </li>
+                <li><a href="test.html" target="_blank">Drive Test</a></li>
+                <li><a href="contactus.html" target="_blank">Contact Us</a></li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+            </ul>
+            <button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Switch Theme</button>
+            <a href="login.html" class="btn btn-login">Join The Club</a>  
+        </nav>
     </header>
+
     <div class="brand-logo-container">
         <img src="images/BMW-logo.png" alt="Brand logo" width="68" height="65">
     </div>
 
-    <!-- Media Showcase -->
     <div class="media-container"> 
         <video controls>
             <source src="videos/BMW-museum.mp4" type="video/mp4">
         </video>
     </div>
 
-    <!-- Audio Feedback -->
     <audio autoplay class="ambient-sound">
         <source src="sounds/BMW-engine.mpeg" type="audio/mpeg">
         Your browser doesn’t support the audio element.
     </audio>
 
-    <!-- Car Showcase Section -->
     <section class="content-section">
         <div class="section-header">
             <div class="section-title">
@@ -101,7 +98,6 @@
         </div>
     </section>
 
-    <!-- Data/Pricing Section -->
     <section class="data-section">
         <div class="table-wrapper">
             <table class="info-table">
@@ -128,184 +124,204 @@
                     </tr>
                 </tbody>
             </table>    
-                    <hr class="section-divider">
-<hr class="section-divider">
-
-<div class="brand-logo-container">
-    <img src="images/Mercedes.webp" alt="Brand logo" width="68" height="65">
-</div>
-
-<div class="media-container"> 
-    <video controls>
-        <source src="videos/Mercedes-museum.mp4" type="video/mp4">
-        Your browser doesn’t support the video.
-    </video>
-</div>
-
-<section class="content-section">
-    <div class="section-header">
-        <div class="section-title">
-            <div class="icon-circle">
-                <i class="fa-solid fa-car"></i> 
-            </div>
-            <h2>Mercedes-Benz 300 SL Gullwing</h2>
-            <div class="rating-stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
         </div>
-        <p class="section-desc">A timeless automotive masterpiece, legendary for its iconic upward-opening doors and revolutionary design.</p>
+    </section>
+
+    <hr class="section-divider">
+
+    <div class="brand-logo-container">
+        <img src="images/Mercedes.webp" alt="Brand logo" width="68" height="65">
     </div>
 
-    <div class="card-grid">
-        <div class="feature-card">
-            <div class="card-image">
-                <img src="images/Mercedes-Benz 300 SL Gullwing (1954)(3).jpeg" alt="Vehicle detail">
-            </div>
-            <div class="card-content">
-                <h3>Fuel-Injected Innovation</h3>
-                <p>The 300 SL was a mechanical marvel, being the first production car to feature direct fuel injection.</p>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="card-image">
-                <img src="images/Mercedes-Benz 300 SL Gullwing (1954).png" alt="Vehicle history">
-            </div>
-            <div class="card-content">
-                <h3>The World’s First Supercar</h3>
-                <p>Born from the DNA of a Le Mans champion, it redefined what a production car could achieve.</p>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="card-image">
-                <img src="images/Mercedes-Benz 300 SL Gullwing (1954)(2).png" alt="Vehicle silhouette">
-            </div>
-            <div class="card-content">
-                <h3>The Iconic Silhouette</h3>
-                <p>The 'Gullwing' doors aren't just design; they are a masterpiece of engineering necessity.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="data-section">
-    <div class="table-wrapper">
-        <table border="3" class="info-table">
-            <thead>
-                <tr>
-                    <th class="table-header">Car Name</th>
-                    <th class="table-header">Price</th>
-                    <th class="table-header">Car Warranty</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Mercedes-Benz 300 SL Gullwing</td>
-                    <td>NOT FOR SALE</td>
-                    <td>Antique</td>
-                </tr>
-                <tr>
-                    <td>Mercedes-AMG G 63</td>
-                    <td>$250,000</td>
-                    <td>4 Years</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-<hr class="section-divider">
-
-<div class="brand-logo-container">
-    <img src="images/Porche.png" alt="Brand logo" width="55" height="70">
-</div>
-
-<div class="media-container">
-    <video controls>
-        <source src="videos/porche-museum.mp4" type="video/mp4">
-        Your browser doesn’t support the video.
-    </video>
-</div>
-
-<section class="content-section">
-    <div class="section-header">
-        <div class="section-title">
-            <div class="icon-circle">
-                <i class="fa-solid fa-car"></i> 
-            </div>
-            <h2>Porsche 356 Speedster</h2>
-            <div class="rating-stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-        </div>
-        <p class="section-desc">A lightweight, open-top masterpiece that defined the "less is more" philosophy.</p>
+    <div class="media-container"> 
+        <video controls>
+            <source src="videos/Mercedes-museum.mp4" type="video/mp4">
+        </video>
     </div>
 
-    <div class="card-grid">
-        <div class="feature-card">
-            <div class="card-image">
-                <img src="images/Porsche 356 Speedster(3).jpeg" alt="Vehicle agility">
+    <section class="content-section">
+        <div class="section-header">
+            <div class="section-title">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-car"></i> 
+                </div>
+                <h2>Mercedes-Benz 300 SL Gullwing</h2>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
             </div>
-            <div class="card-content">
-                <h3>The Art of Lightness</h3>
-                <p>The 356 Speedster relied on its power-to-weight ratio to offer a raw mechanical connection.</p>
-            </div>
+            <p class="section-desc">A timeless automotive masterpiece, legendary for its iconic upward-opening doors and revolutionary design.</p>
         </div>
-        </div>
-</section>
 
-<section class="data-section">
-    <div class="table-wrapper">
-        <table border="3" class="info-table">
-            <thead>
-                <tr>
-                    <th class="table-header">Car Name</th>
-                    <th class="table-header">Price</th>
-                    <th class="table-header">Car Warranty</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Porsche 356 Speedster</td>
-                    <td>NOT FOR SALE</td>
-                    <td>Antique</td>
-                </tr>
-                <tr>
-                    <td>Porsche Taycan Turbo GT</td>
-                    <td>$2,300,000</td>
-                    <td>4 Years</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="card-grid">
+            <div class="feature-card">
+                <div class="card-image">
+                    <img src="images/Mercedes-Benz 300 SL Gullwing (1954)(3).jpeg" alt="Vehicle detail">
+                </div>
+                <div class="card-content">
+                    <h3>Fuel-Injected Innovation</h3>
+                    <p>The 300 SL was a mechanical marvel, being the first production car to feature direct fuel injection.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-image">
+                    <img src="images/Mercedes-Benz 300 SL Gullwing (1954).png" alt="Vehicle history">
+                </div>
+                <div class="card-content">
+                    <h3>The World’s First Supercar</h3>
+                    <p>Born from the DNA of a Le Mans champion, it redefined what a production car could achieve.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-image">
+                    <img src="images/Mercedes-Benz 300 SL Gullwing (1954)(2).png" alt="Vehicle silhouette">
+                </div>
+                <div class="card-content">
+                    <h3>The Iconic Silhouette</h3>
+                    <p>The 'Gullwing' doors aren't just design; they are a masterpiece of engineering necessity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="data-section">
+        <div class="table-wrapper">
+            <table border="3" class="info-table">
+                <thead>
+                    <tr>
+                        <th class="table-header">Car Name</th>
+                        <th class="table-header">Price</th>
+                        <th class="table-header">Car Warranty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mercedes-Benz 300 SL Gullwing</td>
+                        <td>NOT FOR SALE</td>
+                        <td>Antique</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes-AMG G 63</td>
+                        <td>$250,000</td>
+                        <td>4 Years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <div class="brand-logo-container">
+        <img src="images/Porche.png" alt="Brand logo" width="55" height="70">
     </div>
-</section>
-<script src="script.js"></script>
 
- <div class="footer-col">
+    <div class="media-container">
+        <video controls>
+            <source src="videos/porche-museum.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section class="content-section">
+        <div class="section-header">
+            <div class="section-title">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-car"></i> 
+                </div>
+                <h2>Porsche 356 Speedster</h2>
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <p class="section-desc">A lightweight, open-top masterpiece that defined the "less is more" philosophy.</p>
+        </div>
+
+        <div class="card-grid">
+            <div class="feature-card">
+                <div class="card-image">
+                    <img src="images/Porsche 356 Speedster(3).jpeg" alt="Vehicle agility">
+                </div>
+                <div class="card-content">
+                    <h3>The Art of Lightness</h3>
+                    <p>The 356 Speedster relied on its power-to-weight ratio to offer a raw mechanical connection.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-image">
+                    <img src="images/Porsche 356 Speedster(2).jpeg" alt="Pure Driving">
+                </div>
+                <div class="card-content">
+                    <h3>Pure Driving</h3>
+                    <p>Minimalist interior and a low windshield made the Speedster the ultimate driver's car of the 50s.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-image">
+                    <img src="images/Porsche 356 Speedster.jpeg" alt="Legacy">
+                </div>
+                <div class="card-content">
+                    <h3>Legacy of Speed</h3>
+                    <p>This car established Porsche as a dominant force in sports car manufacturing worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="data-section">
+        <div class="table-wrapper">
+            <table border="3" class="info-table">
+                <thead>
+                    <tr>
+                        <th class="table-header">Car Name</th>
+                        <th class="table-header">Price</th>
+                        <th class="table-header">Car Warranty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Porsche 356 Speedster</td>
+                        <td>NOT FOR SALE</td>
+                        <td>Antique</td>
+                    </tr>
+                    <tr>
+                        <td>Porsche Taycan Turbo GT</td>
+                        <td>$2,300,000</td>
+                        <td>4 Years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
                 <h3>Contact Us</h3>
                 <p>123 Speed Way, Turbo City</p>
-                <p>Email: <a href="mailto:info@autoworld.com">carzone@gmail.com</a></p>
+                <p>Email: <a href="mailto:carzone@gmail.com">carzone@gmail.com</a></p>
                 <p>Phone: +022659 hot line</p>
                 <div class="socials">
                     <span>IG</span> <span>FB</span> <span>YT</span>
                 </div>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p>&copy; 2026 CAR ZONE | All Rights Reserved</p>
         </div>
     </footer>
 
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
